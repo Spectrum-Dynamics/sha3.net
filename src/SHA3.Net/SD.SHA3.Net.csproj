@@ -32,8 +32,8 @@
     <PropertyGroup>
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-        <PackageId Condition="'$(AssemblyOriginatorKeyFile)' != ''">SD.$(AssemblyName).Strongname</PackageId>
-        <PackageId Condition="'$(AssemblyOriginatorKeyFile)' == ''">SD.$(AssemblyName)</PackageId>
+        <PackageId Condition="'$(AssemblyOriginatorKeyFile)' != ''">$(AssemblyName).Strongname</PackageId>
+        <PackageId Condition="'$(AssemblyOriginatorKeyFile)' == ''">$(AssemblyName)</PackageId>
         <SignAssembly Condition="'$(AssemblyOriginatorKeyFile)' != ''">true</SignAssembly>
     </PropertyGroup>
 
