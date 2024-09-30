@@ -1,26 +1,27 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;netstandard2.1;net5.0;net6.0</TargetFrameworks>
+        <TargetFrameworks>netstandard2.1;net6.0</TargetFrameworks>
         <Version>2.0.0</Version>
         <Authors>https://github.com/dariogriffo</Authors>
         <Company>https://github.com/dariogriffo</Company>
         <Product>SHA3.Net</Product>
-        <Copyright>https://github.com/dariogriffo</Copyright>
+        <Copyright>https://github.com/Spectrum-Dynamics/sha3.net</Copyright>
         <Description>SHA3 wrapper of the BouncyCastle implementation, implementing System.Security.Cryptography.HashAlgorithm</Description>
-        <PackageProjectUrl>https://github.com/dariogriffo/sha3.net</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/dariogriffo/sha3.net</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/Spectrum-Dynamics/sha3.net</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Spectrum-Dynamics/sha3.net</RepositoryUrl>
         <Product>SHA3.Net</Product>
         <DebugSymbols>true</DebugSymbols>
         <EmbedAllSources>true</EmbedAllSources>
         <DebugType>portable</DebugType>
         <IncludeSymbols>true</IncludeSymbols>
+        <AssemblyOriginatorKeyFile />
     </PropertyGroup>
 
     <PropertyGroup>
         <PackageIcon>images\icon.png</PackageIcon>
         <PackageTags>SHA3</PackageTags>
-        <PackageReleaseNotes>https://github.com/dariogriffo/sha3.net/blob/main/RELEASE_NOTES.md</PackageReleaseNotes>
+        <PackageReleaseNotes>https://github.com/Spectrum-Dynamics/sha3.net/blob/main/RELEASE_NOTES.md</PackageReleaseNotes>
         <PackageLicenseFile>license\license.txt</PackageLicenseFile>
     </PropertyGroup>
     <ItemGroup>
@@ -31,6 +32,9 @@
     <PropertyGroup>
         <IncludeSymbols>true</IncludeSymbols>
         <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <PackageId Condition="'$(AssemblyOriginatorKeyFile)' != ''">SD.$(AssemblyName).Strongname</PackageId>
+        <PackageId Condition="'$(AssemblyOriginatorKeyFile)' == ''">SD.$(AssemblyName)</PackageId>
+        <SignAssembly Condition="'$(AssemblyOriginatorKeyFile)' != ''">true</SignAssembly>
     </PropertyGroup>
 
 </Project>

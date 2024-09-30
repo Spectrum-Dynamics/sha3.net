@@ -18,7 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\SHA3.Net\SHA3.Net.csproj" />
+      <ProjectReference Include="..\..\src\SHA3.Net\SD.SHA3.Net.csproj" />
     </ItemGroup>
 
 </Project>

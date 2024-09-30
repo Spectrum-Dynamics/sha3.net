@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31321.278
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33927.249
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SHA3.Net", "src\SHA3.Net\SHA3.Net.csproj", "{36C16BF9-F0CC-484D-9BF8-24BDDCAC663E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SD.SHA3.Net", "src\SHA3.Net\SD.SHA3.Net.csproj", "{36C16BF9-F0CC-484D-9BF8-24BDDCAC663E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SHA3.Net.Tests", "tests\SHA3.Net.Tests\SHA3.Net.Tests.csproj", "{067D4FA6-4D73-4C8A-9CE5-6223FB9AACDE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SHA3.Net.Tests", "tests\SHA3.Net.Tests\SHA3.Net.Tests.csproj", "{067D4FA6-4D73-4C8A-9CE5-6223FB9AACDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
