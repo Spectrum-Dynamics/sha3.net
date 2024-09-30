@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using SHA3.Net.BouncyCastle;
 
-[assembly: InternalsVisibleTo("SHA3.Net.Tests")]
+[assembly: InternalsVisibleTo("SHA3.Net.Tests, PublicKey=580e16eea0f4fcec")]
 
 namespace SHA3.Net
 {
